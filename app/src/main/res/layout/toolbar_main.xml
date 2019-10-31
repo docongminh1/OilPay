@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground"
+    android:id="@+id/toolbarMain">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/imageMenu"
+            android:src="@drawable/ic_menu"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OilPay"
+            android:textSize="32dp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

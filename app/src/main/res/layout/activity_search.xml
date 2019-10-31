@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground"
+        android:layout_marginTop="24dp"
+        android:minHeight="?attr/actionBarSize">
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="16dp"
+            android:background="@android:color/white"/>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suggestion key"
+                android:textSize="16dp"
+                android:layout_margin="12dp"/>
+            <me.gujun.android.taggroup.TagGroup
+                android:padding="12dp"
+                android:id="@+id/tag_transition_group"
+                app:atg_borderColor="@color/colorBackground"
+                app:atg_textColor="@color/colorBackground"
+                style="@style/TagGroup"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ListView
+        android:id="@+id/listViewSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Result"
+        android:textSize="24dp"
+        android:gravity="center"/>
+
+</LinearLayout>

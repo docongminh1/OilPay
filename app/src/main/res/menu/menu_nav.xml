@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/dsGioithieu"
+        android:title="Gioi thieu"
+        android:icon="@drawable/ic_introduce"/>
+    <item android:id="@+id/dsSanpham"
+        android:title="Danh sach nhot"
+        android:icon="@drawable/ic_oil"/>
+    <item android:id="@+id/dsLienhe"
+        android:title="Thong tin lien lac"
+        android:icon="@drawable/ic_call1"/>
+
+</menu>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PayActivity">
+
+    <ListView
+        android:id="@+id/lvPay"
+        android:layout_width="match_parent"
+        android:layout_height="500dp" />
+
+    <TextView
+        android:id="@+id/txtTongTien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Total"
+        android:textSize="32dp"
+        android:layout_below="@id/lvPay"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Tổng tiền :"
+        android:textSize="32dp"
+        android:layout_below="@id/lvPay"/>
+    <Button
+        android:id="@+id/btnThanhtoan"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Thanh toán"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"/>
+    <Button
+        android:id="@+id/btnThanhtoanOnline"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Paypal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

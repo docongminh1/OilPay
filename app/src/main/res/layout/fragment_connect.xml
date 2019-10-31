@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConnectFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/cuahang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<!--    <com.google.android.youtube.player.YouTubePlayerView-->
+<!--        android:id="@+id/viewPlayer"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <Button
+        android:id="@+id/mapView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_lienlac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/ic_call"
+        app:layout_constraintEnd_toStartOf="@+id/btnSms"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapView" />
+
+    <Button
+        android:id="@+id/btnSms"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_sms"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCall"
+        app:layout_constraintEnd_toStartOf="@+id/btnMess"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnCall"
+        app:layout_constraintTop_toTopOf="@+id/btnCall" />
+
+    <Button
+        android:id="@+id/btnYoutube"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/ic_youtube"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMess"
+        app:layout_constraintTop_toTopOf="@+id/btnMess" />
+
+    <Button
+        android:id="@+id/btnMess"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/ic_mess"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSms"
+        app:layout_constraintEnd_toStartOf="@+id/btnYoutube"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnSms"
+        app:layout_constraintTop_toTopOf="@+id/btnSms" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Địa chỉ: "
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="137E Nguyễn Chí Thanh, Phường 6, Quận 5"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="SĐT:0902384255"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCall" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
